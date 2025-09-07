@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!-- MP4 WEBM OGV -->
+     <!-- 
+        MP4: Compatível com a maioria dos navegadores e dispositivos, incluindo iOS e Android.
+        WEBM: Formato aberto, suportado por navegadores modernos como Chrome e Firefox.
+        OGV: Formato aberto, mas com suporte limitado em navegadores.
+    <video src="midia/meu-mideo.webm" width="500" controls></video>
+    <video src="midia/meu-video.mp4" width="500" controls></video>
+    <video src="midia/meu-video.ogv" width="500" controls></video>
+    -->
+
+    <!-- A tag video permite a inserção de vídeos em HTML5 -->
+    <!-- Atributos importantes:
+        controls: Exibe os controles de reprodução (play, pause, volume, etc).
+        autoplay: Inicia a reprodução automaticamente (pode ser bloqueado por navegadores).
+        loop: Repete o vídeo automaticamente após o término.
+        muted: Inicia o vídeo sem som (geralmente necessário para autoplay funcionar).
+        poster: Define uma imagem a ser exibida antes do vídeo começar a ser reproduzido.
+    --> 
+    <video width="500" poster="imagens/limao-capa.png" controls autoplay loop muted>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir vídeo. <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo MP4</a></p>
+
+    </video>
+
+    <!--Adicionando vídeo de serviços de hospedagem de vídeo-->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i7L19SOqbNM?si=Xf0GgW2wTSWjCBl_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+</body>
+</html>

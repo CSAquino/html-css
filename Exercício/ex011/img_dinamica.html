@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o temanho do seu navegador.</p>
+
+    <picture><!-- picture é a tag que permite imagens dinâmicas -->
+        <!-- source é a tag que define as condições para cada imagem -->
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--<audio src="midia/OnTheFlip.mp3" controls autoplay></audio>
+        <!-- MP3 WAV OGG -->
+    
+     <audio preloard="metadata" autoplay controls loop>
+        <!--
+            auto: reproduz o áudio após o carregamento completo
+            metadata: carrega apenas os metadados (duração, etc)
+            none: não carrega o áudio automaticamente
+        -->
+        <source src="midia/OnTheFlip.mp3" type="audio/mpeg">
+        <source src="midia/OnTheFlip.ogg" type="audio/ogg">
+        <source src="midia/OnTheFlip.wav" type="audio/wav"><!--Evitar pois é muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/OnTheFlip.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+     </audio>
+
+</body>
+</html>
