@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        /*
+        Medidas Absolutas
+            cm, mm, in (polegada), px, pt (ponto), pc (paica)
+            pt e pc, são medidas de impressão
+            NÃO USAR ESTAS MEDIDAS
+
+        Medidas Relativas
+            em - medida relativa ao tamanho do M maíusculo de uma fonte.
+            ex - relativo a altura X maíuscula de uma fonte
+            rem - relativo ao root (A fonte configurada no body)
+            vw - relativo a largura da vewport (largura de visão da tela)
+            vh - relativo a altura de vewport
+            % - relativo a porcentagem de tamanho da tela
+
+            Geralmente, 16px = 1em
+        */
+
+        body {
+            font-family: 'Work Sans', Helvetica, sans-serif;
+            font-size: 16px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1 {
+            /*
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            
+            ** Shorthand font **
+               (Fazer toda configuração acima de forma mais rápida e simples)
+            -> font-style -> font-weight -> font-size -> font-family  */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio corporis provident reiciendis ad. Qui voluptate nostrum cum dolor ex laborum officiis eveniet repellendus assumenda maiores error tempora deleniti, necessitatibus iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum obcaecati debitis non nemo neque, deserunt eligendi perspiciatis natus voluptatem id laborum dignissimos officiis qui? Fugit asperiores quo nesciunt qui aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora quae nobis et inventore consequatur, labore, repellendus ut, fugit delectus qui iusto dolor dolorum? Consequuntur aspernatur consectetur asperiores facilis hic!</p>
+    
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos error aperiam veniam accusantium temporibus, incidunt nesciunt ab nam, enim maiores deserunt neque. Dignissimos quaerat ad laboriosam officiis consequatur doloribus exercitationem.</p>
+</body>
+</html>
